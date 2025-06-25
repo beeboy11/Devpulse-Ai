@@ -1,0 +1,21 @@
+# Ignore node_modules (except production dependencies if needed)
+node_modules/
+
+# Ignore VSCode system folders
+.vscode/
+
+# Ignore common unwanted files
+*.log
+*.pyc
+__pycache__/
+.env
+.DS_Store
+
+# Ignore Python project files outside VSCode extension
+../devpulse/
+../venv/
+../*.py
+../requirements.txt
+
+# Ignore Git files
+.git/

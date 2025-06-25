@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: devpulse
+Version: 0.1.0
+Summary: AI-powered, brutally honest, terminal error and command explanations for developers.
+Home-page: https://github.com/beeboy11/devpulse
+Author: Abiodun
+Author-email: beeboyabiodun111@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: langchain
+Requires-Dist: langchain-google-genai
+Requires-Dist: python-dotenv
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,0 +1,10 @@
+langchain
+langchain-google-genai
+python-dotenv
+colorama
+watchdog
+plyer  # Optional for desktop notifications
+
+# Dev only
+twine
+build

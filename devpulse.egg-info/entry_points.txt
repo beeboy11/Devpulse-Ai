@@ -1,0 +1,2 @@
+[console_scripts]
+devpulse = devpulse.cli:main

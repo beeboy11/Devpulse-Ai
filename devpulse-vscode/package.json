@@ -1,0 +1,57 @@
+{
+  "name": "devpulse",
+  "displayName": "DevPulse AI",
+  "description": "Instant, clear explanations for Python errors and terminal commands—right inside VS Code. Run your Python files and let DevPulse AI help you understand and fix issues faster using Google Gemini models.",
+  "version": "0.1.0",
+  "publisher": "BugHunter",
+  "icon": "images/icon.png",
+  "author": "BugHunter <beeboyabiodun111@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other", "AI", "Programming Languages"],
+  "keywords": ["devpulse", "AI", "error", "terminal", "python", "helper"],
+  "main": "./extension.js",
+  "activationEvents": [
+    
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "devpulse.runWithDevPulse",
+        "title": "Run with DevPulse (Explain Errors)"
+      },
+      {
+        "command": "devpulse.setApiKey",
+        "title": "DevPulse: Set Gemini API Key"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "devpulse.runWithDevPulse",
+          "when": "resourceLangId == python",
+          "group": "navigation"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "devpulse.setApiKey",
+          "when": "workspaceFolderCount > 0",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beeboy11/devpulse"
+  },
+  "bugs": {
+    "url": "https://github.com/beeboy11/devpulse/issues"
+  },
+  "homepage": "https://github.com/beeboy11/devpulse",
+  "dependencies": {},
+  "devDependencies": {}
+}
